@@ -1,1 +1,1 @@
-# flipkart_smartphone_data_scraper
+# Web Scraping Smartphone Data from Flipkart
