@@ -12,7 +12,7 @@ Before running the script, ensure that the required libraries are installed. You
 !pip install requests --upgrade --quiet
 ```
 ## Script Breakdown
-1. Importing Necessary Libraries
+### 1. Importing Necessary Libraries
 The script begins by importing the required libraries:
 ```
 import requests
@@ -24,7 +24,7 @@ import pandas as pd
 - `pandas`: Utilized for data manipulation and storage in a CSV file.
 <br />
 
-2. Sending HTTP Request and Checking Status Code
+### 2. Sending HTTP Request and Checking Status Code
 The script sends a GET request to the Flipkart search URL to retrieve HTML content:
 The 200 status code means that the request was successful.
 ```
@@ -34,14 +34,14 @@ response = requests.get(url)
 ```
 <br />
 
-3. Parsing HTML Content using BeautifulSoup
+### 3. Parsing HTML Content using BeautifulSoup
 
 ```
 soup = BeautifulSoup(response.text,'html.parser')
 ```
 <br />
 
-4. Extracting Smartphone Data
+### 4. Extracting Smartphone Data
 The script extracts the following data from the HTML:
 
 - Smartphone Names:
@@ -108,7 +108,7 @@ The script extracts the following data from the HTML:
 ```
 <br />
 
-5. Handling Pagination
+### 5. Handling Pagination
 To scrape data from multiple pages, the script iterates over the specified number of pages (10 in this case):
 
 ```
@@ -157,7 +157,7 @@ for page in range(2, num_pages + 1):
 ```
 <br />
 
-6. Data Validation
+### 6. Data Validation
 After scraping, the script validates that the number of extracted items is consistent across all attributes:
 ```
 print(len(smartphone_name))
@@ -171,7 +171,7 @@ print(len(battery))
 ```
 <br />
 
-7. Storing Data in a CSV File
+### 7. Storing Data in a CSV File
 The final step involves storing the extracted data into a CSV file using `pandas`:
 ```
 data = {
