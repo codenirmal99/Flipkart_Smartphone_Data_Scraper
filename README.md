@@ -4,6 +4,7 @@ This Python script is designed to scrape smartphone data from the Flipkart websi
 
 ## Prerequisites
 - Python 3.12
+- Jupyter Notebook (for running the script interactively)
 - Required libraries: `requests`, `BeautifulSoup` (from `bs4`), `pandas`
 
 ## Installation of Required Libraries
